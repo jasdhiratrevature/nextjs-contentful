@@ -159,6 +159,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 11. Open the `[slug].js` or the RecipeDetails Component, and modify the code inside `getStaticProps()`  addition to returning the props also return another property `revalidate`
 12. The value for the `revalidate : 10` property is a number in seconds.
 13. Also make the same changes to the index.js
+14. When we make some changes , NextJS is using ISR, but when we add new content, It is available in the Recipe Component but Recipe Details gives 404.
+15. All `ISR` does is that it regenerates pages that already exists, it does not generate a new page and we need a way to do that.
+16. For this we are going to use a fallback page, which is basically a place holder page, while NextJS fetches the data and generates new page for us in the background for cases like this.
 
 ---
 
