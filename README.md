@@ -110,4 +110,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ---
 
+### Branch Name : 06-Styled_JSX
+1. Let us provide some styling to our Recipe Card Component.
+2. We will use the styled jsx for our index.js and RecipeCard.js
 
+---
+
+### Branch Name : 07-Generating_Paths
+1. 
