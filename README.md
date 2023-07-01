@@ -117,4 +117,19 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ---
 
 ### Branch Name : 07-Generating_Paths
-1. 
+1. When we click on the Cook This button on any Recipe, we go to the Recipe Details for the recipe.
+2. This page is driven by the slug component, we need to generate the static pages for these routes.
+3. The Recipe Details should display the data for the respective Recipe.
+4. The way to achieve this in `NextJS` is to use `getStaticPaths()` inside the slug/RecipeDetail component, which will give the path for every recipe.
+5. So we need data from the contentful , so we need to communicate to contentful using the contentful client.
+6. Write code to `getStaticPaths()`
+7. Once done we also need data pertaning to every path  we achieve this by using `getStaticProps`
+8. Go ahead and implement the code for `getStaticProps()`
+9. For every time `NextJS` runs `getStaticPaths()` it run the `getStaticProps()` as well.
+10. The `getStaticProps()` takes `context` as the props
+11. The `getStaticProps()` return the props as `recipe`
+12. We will pass this prop to the `RecipeDetails` component.
+
+---
+
+
