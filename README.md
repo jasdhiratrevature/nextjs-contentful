@@ -144,4 +144,24 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ---
 
+### Branch Name : 10-Incremental_Static_Regeneration
+
+1. We have deployed our site, what happens when we add new content to Contentful CMS.
+2. When we add new content or modify some content, NextJS did not pick up that change,.
+3. When we deploy our application and view the details pages, all the pages are the static pages that were created during the build process.
+4. So the site will show only that data which was present in Contentful CMS at the time of build.
+5. So in order to view the latest ot fresh data, we have to manually build or redeploy our project.
+6. but this would be challenging if we are adding or updating content frequently.
+7. One solution to this is by using a feature called `Incremental Static Regeneration` in NextJS
+8. `Incremental Static Regeneration (ISR)` is a feature in which NextJS automatically generates a new page or regenerates an existing page in the background if content is added or changed in our datasource, in our case it would be Contentful CMS.
+9. We can have this feature on a page to page basis and it depends on the developer and development team on what pages to have this feature.
+10. Implementing this feature is simple, all we need to do is open our component where we want to enable ISR.
+11. Open the `[slug].js` or the RecipeDetails Component, and modify the code inside `getStaticProps()`  addition to returning the props also return another property `revalidate`
+12. The value for the `revalidate : 10` property is a number in seconds.
+13. Also make the same changes to the index.js
+
+---
+
+### Branch Name : 11-Fallback_Pages
+
 
