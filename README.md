@@ -47,3 +47,25 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 5. Update the  `index.js` , remove the content that is present and create a new component `Recipes` for the page
 6. Finally execute the dev server and view your site on browser `localhost:3000`
 7. update the global.css as well in the styles folder
+
+---
+
+### Branch Name : 02-Contentful_Models
+
+1. Having set up the initial NextJS project, it is time to create our content model in the Contentful CMS.
+2. Login to your Contentful CMS and create your content model.
+3. We are going to create a content model/type named `Recipe` for the recipe with the following fields
+
+    - Title --> Short Text --> Required, Unique
+    - Slug --> Short Text --> Required, Unique, Pattern (^[a-z0-9]+(?:-[a-z0-9]+)*$)
+    - Thumbnail --> Media --> Image Only
+    - Featured Image --> Media --> Image Only
+    - Ingredients --> Short Text, List --> as Tag
+    - Cooking Time --> Number
+    - Method --> Rich Text
+
+4. Once the Recipe Type is created, go ahead and add some data, for images please upload and publish some images.
+
+---
+
+
