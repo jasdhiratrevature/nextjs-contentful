@@ -46,3 +46,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 4. Create a folder `recipes` inside the pages folder and create a file inisde it name the file `[slug].js` the component name `RecipeDetails`
 5. Update the  `index.js` , remove the content that is present and create a new component `Recipes` for the page
 6. Finally execute the dev server and view your site on browser `localhost:3000`
+7. update the global.css as well in the styles folder
