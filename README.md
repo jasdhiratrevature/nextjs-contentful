@@ -36,3 +36,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+---
+### Branch Name : 01-InitialSetUp
+
+1. Once we have create a next js project it is time to do some initial setup , like creating a layout providing a style and updating the index.js and other files.
+2. Create a folder `component` in the root directory inside this directory create a `Layout` component by creating a file Layout.js
+3. Update the `_app.js` file and enclose the code inside the `Layout` component.
+4. Create a folder `recipes` inside the pages folder and create a file inisde it name the file `[slug].js` the component name `RecipeDetails`
+5. Update the  `index.js` , remove the content that is present and create a new component `Recipes` for the page
+6. Finally execute the dev server and view your site on browser `localhost:3000`
