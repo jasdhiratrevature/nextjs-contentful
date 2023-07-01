@@ -82,9 +82,23 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 9. The createClient functions needs and object as parameter, the content of the object are space id and accessToken
 10. Grab the space id and accessToken from your contentful instance.
 11. Its is always a bad idea to have the space ID and accesstoken in the code, hence move the space id and accestoken to enviornment variable in an .env.local file in the root of the project.
+
 ### Note : Please restart the dev server once changes are made to the .env file
+
 12. use the getEntries() nethod from the contentful client and return the recipes as props.
 13. Pass the props to the Recipe component
 
 ---
+
+### Branch Name : 04-Outputting_Recipe_Data
+1. Let  us now display the data fetched from the getEnteries() in to our Component.
+2. We can now iterate over the recipe data uisng a map function and display it, but we want to keep our Home component , i.e. index.js clean.
+3. We will create a seperate component `RecipeCard` in the component folder and use it in the Recipes/Home component.
+4. So let us make that component `RecipeCard`
+5. Also go ahead and click on the link cook-this for any of the recipe. 
+6. You will be taken to the Recipe Details page. Notice the url at the end, that's the slug.
+
+---
+
+### Branch Name : 05
 
