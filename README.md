@@ -100,5 +100,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ---
 
-### Branch Name : 05
+### Branch Name : 05-Using_Images_From_Contentful
+1. To output the image we will use the built in `Image` component from `NextJS`, which auto optimizes images for us.
+2. Add the Image component and add the src , width , height props for the component.
+3. Once done , save your page, you will get an error
+    `hostname "images.ctfassets.net" is not configured under images in your` `next.config.js`
+4. Go ahead and configure the `next.config.js` file
+5. Restart the dev server and view the output.
+
+---
+
 
