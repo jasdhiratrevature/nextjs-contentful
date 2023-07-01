@@ -68,4 +68,23 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ---
 
+### Branch Name : 03-Contentful_Client
+
+1. Now we are going to show the data stores in our contentful cms on our next js application.
+2. to do this we are going to use the contentful client package whci we can install with npm.
+3. Open up a new terminal and then tey the following command
+` npm install contentful`. 
+4. This package we can use in our application to connect to our contentful accoiunt and then grab data from it.
+5. We want to get data from our index.js page, so open up the index.js page and this is where we are going to connect to our contentful.
+6. create and export the getStaticProps() function from nextjs in our index.js
+7. This function is used to grab some data and onject that data to the props into our components so that we can render it in the browser.
+8. The createClient function makes a connection to the ContentfulCMS.
+9. The createClient functions needs and object as parameter, the content of the object are space id and accessToken
+10. Grab the space id and accessToken from your contentful instance.
+11. Its is always a bad idea to have the space ID and accesstoken in the code, hence move the space id and accestoken to enviornment variable in an .env.local file in the root of the project.
+### Note : Please restart the dev server once changes are made to the .env file
+12. use the getEntries() nethod from the contentful client and return the recipes as props.
+13. Pass the props to the Recipe component
+
+---
 
