@@ -131,5 +131,17 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 12. We will pass this prop to the `RecipeDetails` component.
 
 ---
+### Branch Name : 08-Rich_Text_Content
+1. Now let us display some data,recipe detail  on to our component.
+2. Update the RecipeDetail component `[slug].js` 
+3. To output the cooking method which is Rich Text in our Contentful CMS , we need to set up / install a package `rich text rendering` by contentful.
+4. Install the package `npm i @contentful/rich-text-react-renderer`
+5. Add some style to the RecipeDetail component by using style JSX
+6. All done , now you can view your Recipe Details Page.
+
+---
+### Branch Name : 09-Deploy_To_Vercel
+
+---
 
 
