@@ -176,4 +176,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ---
 
-### Branch Name : 12-
+### Branch Name : 12-Conditional_Redirects
+
+1. When we try to access a recipe that does not exists, we continue to get a FallBack page and it seems the site have stuck, which is not a very good user experience.
+2. So we need a way to redirect a user when the recipe does not exists, to the home page.
+3. The way to achieve this is open the RecipeDetails component `[slug].js` 
+4. And within the `getStaticProps()` if the items.length does not exists, redirect the user to the home page.
+
+---
+
