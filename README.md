@@ -167,4 +167,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### Branch Name : 11-Fallback_Pages
 
+1. So let us implement our fallback page.
+2. Fallback pages are placeholder content while NextJS fetches new data for the page.
+3. To implement fallback pages open the RecipeDetails Component `[slug].js` and update the fallback property in `getStaticPaths()` to true.
+4. In the mean time NextJS fetches some data and constructs the page for us, we will show a dummy component called `Skeleton`
+5. Create the `Skeleton` component and update the RecipeDetails component , with the conditional rendering and render `Skeleton` component.
+6. After completig the code deploy or redeploy the code to see fallback page in action , by adding a new recipe on the Contentful CMS.
 
+---
+
+### Branch Name : 12-
