@@ -185,3 +185,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ---
 
+### Branch Name : 13-Custom_404
+
+1. Let us now create a custom 404 page
+2. In case we visit a route that does not exists, we will show a custom 404 page.
+3. Create a page `404.js` in the `pages` folder.
+4. On the browser navigate to a route that does not exits, you will see the custom `404` page.
+5. Also withing the custom 404 page we can write the logic to redirect the user to home page after 5 seconds.
+6. We will use the `useRoute()` hook for this page redirection.
+
+---
+
+
